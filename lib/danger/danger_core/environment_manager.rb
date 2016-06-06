@@ -29,7 +29,6 @@ module Danger
         next unless request_source.validates?
         self.request_source = request_source
       end
-
       raise "Could not find a Request Source".red unless self.request_source
 
       self.scm = self.request_source.scm
